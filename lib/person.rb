@@ -3,9 +3,13 @@ class Person
 :weight, :handed, :complexion, :t_shirt_size, 
 :wrist_size, :glove_size, :pant_length, :pant_width
 
+#def initialize(attributes)
+  #attributes.each{|key, value| self.send(("#{key=}"), value)}
+#end
+
 def initialize(attributes)
-  attributes.each{|key, value| self.send(("#{key=}"), value)}
-end
+    attributes.each do |key, value|
+      self.send(("#{key}="), value)
 
   
 end

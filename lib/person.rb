@@ -7,11 +7,4 @@ def initialize(attributes)
   attributes.each{|key, value| self.send(("#{key}="), value)}
 end
 
-#def initialize(attributes)
-    #attributes.each do |key, value|
-      #self.send(("#{key}="), value)
-    #end
-  #end
-
-  
 end
